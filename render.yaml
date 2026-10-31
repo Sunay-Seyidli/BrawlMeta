@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: brawlmeta
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22.12.0
+      - key: BRAWL_STARS_API_KEY
+        sync: false

@@ -1,0 +1,8 @@
+{
+  "name": "BrawlMeta - Brawl Stars Stats, Tier Lists & Event Analytics",
+  "description": "Production-grade Brawl Stars companion and analytics platform inspired by Brawlify. Features live event rotations, advanced player profile lookup with battle logs, dynamic meta tier lists, and tactical map guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

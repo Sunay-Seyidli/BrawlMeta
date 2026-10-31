@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Montserrat', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0c10;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom scrollbar for gaming look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Rarity border and glow helper classes */
+.glow-yellow {
+  box-shadow: 0 0 15px rgba(245, 166, 35, 0.4);
+}
+.glow-pink {
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);
+}
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+.glow-purple {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+/* Gaming card angled cut */
+.brawl-card-clip {
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.text-stroke-sm {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+}
+.text-stroke-md {
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.9);
+}
